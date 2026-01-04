@@ -1,0 +1,20 @@
+ELF Header:
+Ident	Type	Phoff 	Shoff 	Phnum	Shnum
+ELF	REL 	0     	79    	0   	4   
+
+Section Headers:
+Num 	Name            	Type  	Offset	Size  	Link	Addr    
+[0]	                	NULL  	0     	0     	0   	00000000
+[1]	isr             	PROGBITS	24    	4     	0   	00000000
+[2]	.symtab         	SYMTAB	28    	36    	3   	00000000
+[3]	.strtab         	STRTAB	64    	15    	0   	00000000
+
+#.symtab
+Shndx	Bind  	Type  	Value   	Name            
+*UND*	LOC   	NOTYP 	00000000	
+1   	LOC   	SECT  	00000000	isr
+1   	GLOB  	NOTYP 	00000000	isr_timer
+
+#.isr
+00000000: 04 00 fe 93
+
